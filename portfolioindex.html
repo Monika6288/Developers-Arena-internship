@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: #1f2937;
+            color: #fff;
+            padding: 1rem 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+        nav h1 { font-size: 1.5rem; }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover { text-decoration: underline; }
+        main {
+            width: 90%;
+            margin: 2rem auto;
+        }
+        section {
+            margin-bottom: 3rem;
+        }
+        section h2 {
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        #about img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        #skills ul {
+            list-style: square;
+            margin-left: 1.5rem;
+        }
+        form {
+            max-width: 400px;
+        }
+        form label {
+            display: block;
+            margin-top: 1rem;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.3rem;
+        }
+        form button {
+            margin-top: 1rem;
+            padding: 0.6rem 1.2rem;
+            background: #1f2937;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover { background: #374151; }
+        footer {
+            background: #f3f4f6;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>My Portfolio</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="D:\MONI\sample picture.jpeg" alt="Profile photo of Moni" style="max-width:150px;border-radius:50%;margin-bottom:1rem;">
+        <p>
+            Hello! I am a Computer Science student passionate about web development and technology.
+            I enjoy building responsive websites and learning new tools to improve my skills.
+        </p>
+        <p>
+            🔗 External Links:
+            <br>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript Basics</li>
+            <li>Responsive Web Design</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
